@@ -1,18 +1,25 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import Footer from "./Components/Footer";
 import  Register from "./Components/Register";
-import Header from "./Components/Header";
+import Navigation from "./Components/Navigation";
+import Home from "./Components/Home";
+import Login from "./Components/Login";
+import {  Route, Routes} from 'react-router-dom';
 
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+
 function App() {
   return (
     <>
-  <Header/>
-  <Register/>
+    <header> <Navigation/> </header>
+    
+    <Routes>
+    <Route path="Register" element={<Register />}/>
+    <Route path="Login" element={<Login />}/> 
+    <Route path="Home" element={<Home />}/> 
+    </Routes>
+   
+     
   <Footer/>
     </>
    
