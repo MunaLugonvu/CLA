@@ -1,4 +1,5 @@
 import pic from "./img/header-img.png";
+import Footer from "./Footer";
 
 import { Container, Row, Col } from "react-bootstrap";
 import "./style.css";
@@ -137,8 +138,7 @@ const Home = () => (
         </section>
 
       
-
-
+<Footer/>
 
 
     </>
