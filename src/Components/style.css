@@ -21,6 +21,9 @@ div {
   ;
 
 }
+.list-left{
+  justify-content: left;
+}
 
 .form-wrapper {
   display: flex;
