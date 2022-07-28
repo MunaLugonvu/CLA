@@ -12,8 +12,10 @@ const Navigation = () => {
           <Navbar.Brand href="Home">CLA</Navbar.Brand>
          
           <Nav className="justify-content-end">
+            <Nav.Link href="Lesson">Lessons</Nav.Link>
             <Nav.Link href="Register">Register</Nav.Link>
             <Nav.Link href="Login">Login</Nav.Link>
+            
           </Nav>
         </Container>
       </Navbar>

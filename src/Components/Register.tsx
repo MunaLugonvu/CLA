@@ -19,8 +19,8 @@ const Register: React.FC = () => {
       fullname: Yup.string().required('required'),
       email: Yup.string().email().required(),
       password: Yup.string().required('Password is required')
-      .min(6, 'Password must be at least 6 characters')
-      .max(40, 'Password must not exceed 40 characters'),
+         .min(6, 'Password must be at least 6 characters')
+         .max(40, 'Password must not exceed 40 characters'),
       confirmPassword: Yup.string().required('This is required').oneOf([Yup.ref('password'), null], 'Confirm Password does not match'),
    });
 
@@ -42,7 +42,10 @@ const Register: React.FC = () => {
                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className='fullName'>
                      <label htmlFor="fullName">Full Name</label>
-                     <input type="text"{...register('fullname')} className={`form-control ${errors.fullname ? 'is-invalid' : ''}`} />
+                     <input
+                        type="text"{...register('fullname')}
+                        className={`form-control ${errors.fullname ? 'is-invalid' : ''}`}
+                     />
                      <div className="invalid-feedback">{errors.fullname?.message}</div>
                   </div>
                   <div className='email'>

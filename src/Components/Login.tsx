@@ -19,7 +19,7 @@ const Login = () => {
                   <input type='password' name='password' />
                </div> 
                <div>
-                Do not have an account? <a href="/Register">Register Here</a>
+                Do not have an account? <a href="Register">Register Here</a>
                </div>             
                <div className='submit'>
                   <Button>Log In</Button>
