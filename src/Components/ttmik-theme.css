@@ -1,0 +1,86 @@
+.card {
+    height: 100%;
+    border: solid 1px #d7e3f2;
+    padding: 20px;
+    background-color: #fff;
+}
+.iconn{
+    color: #999;
+}
+  .card.account-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+   
+    text-align: center;
+}
+.card.account-user .circle img {
+    border: solid 4px #ffb803;
+}
+.card.account-user .user-meta {
+    padding: 8px 0;
+    font-size: 24px;
+    line-height: 1.35;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #35509a;
+}
+.card.account-user a {
+    display: block;
+    height: 48px;
+    line-height: 24px;
+    padding: 12px;
+    font-size: 14px;
+    color: #9c9cf7;
+}
+.card.account-user a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.card.account-user a:focus {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.card.statuses {
+    min-height: 100%;
+    text-align: center;
+}
+.card.statuses .user-statuses {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 690px;
+    min-height: 60px;
+    margin: 15px auto 0;
+    padding-bottom: 11px;
+    border-bottom: solid 1px rgba(215, 227, 242, 0.5);
+}
+.card.statuses .user-statuses h2 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    color: #35509a;
+}
+.card.statuses .user-statuses h2 strong {
+    font-weight: 700;
+}
+.card.statuses .user-statuses h2 strong.Premium {
+    color: #ffb803;
+}
+.card.statuses .state-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 110px;
+}
+.button-recommend {
+    border: solid 1px #d7e3f2;
+    display: inline-block;
+    min-height: 42px;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #999;
+}
