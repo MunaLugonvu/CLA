@@ -138,11 +138,12 @@ button:hover {
 text-align: center;
 }
 .footer-bg{
-  background: url("./img/footer-bg.png") no-repeat center;
+ /* background: url("./img/footer-bg.png") no-repeat center;*/
  height: 50px;
   color: white;
 text-align: center;
 background-size: cover;
+background-color: rgb(62, 48, 187);
 }
 
 

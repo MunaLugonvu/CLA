@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Button } from "react-bootstrap";
 
+
 type UserSubmitForm = {
    fullname: string;
    email: string;
@@ -78,9 +79,15 @@ const Register: React.FC = () => {
                   <div className='submit'>
                      <Button type="submit" >Register Me</Button>
                   </div>
+                  <p className="text-left">
+              Already have an account?{' '}
+              <a href="Login">Login</a>
+            </p>
+           
                </form>
             </div>
          </div>
+       
       </>
    );
 };
