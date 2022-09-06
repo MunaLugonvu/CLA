@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SideBar from "./SideBar";
+import "./lesson.css"
 import { Navbar, Nav, Button } from 'react-bootstrap';
 
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
@@ -7,7 +8,8 @@ import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
 import {v4 as uuidv4} from 'uuid'
 
 const itemsFromBackend = [
-  { id: uuidv4(), content: "#include <stdio.h>" },
+  { id: uuidv4(), content: "#include " },
+  { id: uuidv4(), content: "#include " }, 
   { id: uuidv4(), content: "int main() {int values[5];" },
   { id: uuidv4(), content: "printf(Enter 5 integers: ); " },
   { id: uuidv4(), content: "for(int i = 0; i < 5; ++i) {" },
@@ -71,10 +73,16 @@ const Blocks = () => {
   return ( 
 <>
 <SideBar/>
-<Navbar style={{ display: "flex", justifyContent: "center", height: "100%",borderBottom: "2px solid rgb(226, 231, 237)" }}>
-<Nav.Link href="Lesson" >Learning Material</Nav.Link>
- <Nav.Link href="Blocks">Code Puzzle</Nav.Link>
-</Navbar>
+<div className="ld-tabs-navigation">
+            <div className="ld-tab " data-tab="lesson">
+                <span className="ld-icon id-icon-content"></span>
+                <a className="ld-text" href="Lesson" style={{textDecoration: "none"}}>Learning Material</a>
+            </div>
+                                        <div className="ld-tab ld-active" data-tab="custom2"style={{display: "flex;"}} >
+                    <span className="ld-icon id-icon-content"></span>
+                    <a className="ld-text" href="Blocks" style={{textDecoration: "none"}}>Review Quiz</a>
+                </div>
+                                </div>
 
 <div style={{ display: "flex", justifyContent: "center", height: "100%" }}><h2 style={{ paddingLeft: "220px", paddingTop: "10px"}}>Assemble the code blocks correctly.</h2></div>
 <div style={{ display: "flex", justifyContent: "center", height: "100%", borderBottom: "2px solid #e2e7ed" }}>
@@ -109,8 +117,8 @@ const Blocks = () => {
                         ref={provided.innerRef}
                         style={{
                           background: snapshot.isDraggingOver
-                            ? "lightblue"
-                            : "lightgrey",
+                            ? "#172344"
+                            : "#172344",
                           padding: 10,
                           width: 400,
                           minHeight: 600,
@@ -165,10 +173,15 @@ const Blocks = () => {
       </DragDropContext>
       
     </div>
-    <div className=' block-btn' style={{  justifyContent: "center", position: "absolute", left: "840px",
-     paddingTop: "20px",width: "200px", paddingBottom: "20px" }}>
-        <Button style={{backgroundColor: "rgb(69, 108, 134);"}}>Done</Button> 
-    </div>
+    <form className="sfwd-mark-incomplete" style={{padding: "9px"}} method="post" action="https://talktomeinkorean.com/wp-admin/admin-ajax.php?action=ttmik_mark_incomplete" >
+                    <input type="hidden" value="672282" name="user_id"/>
+                    <input type="hidden" value="2836" name="step_id"/>
+                    <input type="hidden" value="5111" name="course_id"/>
+                    <input type="hidden" value="https://talktomeinkorean.com/curriculum/level-1-korean-grammar/lessons/level-1-lesson-2/" name="next_url"/>
+                    <input type="submit" className="mark_incomplete_button" value="Mark Complete" style={{  justifyContent: "center", position: "absolute", left: "840px",
+     paddingTop: "20px",width: "200px"}}/>
+                </form>
+   
 </>
   )
 }

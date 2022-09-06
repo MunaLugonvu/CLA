@@ -15,12 +15,13 @@ div {
 }
 
 .nav-bar {
-  background-color: rgb(255, 255, 255);
   border-radius: 1px;
   box-shadow: 0px 0px 9px rgb(146, 146, 146);
-  ;
+
+  color: #fff;
 
 }
+
 .list-left{
   justify-content: left;
 }
@@ -138,11 +139,12 @@ button:hover {
 text-align: center;
 }
 .footer-bg{
-  background: url("./img/footer-bg.png") no-repeat center;
+ /* background: url("./img/footer-bg.png") no-repeat center;*/
  height: 50px;
   color: white;
 text-align: center;
 background-size: cover;
+background-color:#35509a;
 }
 
 

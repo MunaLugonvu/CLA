@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import "./style.css";
 import "./scss/theme/_home.scss"
+import "./theme.css"
 import "./scss/theme/_reset.scss"
 import "./scss/theme/_predefined.scss"
 import "./css/nice-select.css";
@@ -42,9 +43,9 @@ const Home = () => (
                         <div className="feature-item d-flex">
                             <i className="ti-book"></i>
                             <div className="ml-20">
-                                <h4>New Classes</h4>
+                                <h4>Over 50 Lessons</h4>
                                 <p>
-                                    In the history of modern astronomy, there is probably no one greater leap forward.
+                                    Every topic comes with several lessons.
                                 </p>
                             </div>
                         </div>
@@ -53,7 +54,7 @@ const Home = () => (
                         <div className="feature-item d-flex">
                             <i className="ti-cup"></i>
                             <div className="ml-20">
-                                <h4>Top Courses</h4>
+                                <h4> Fun Self Assessment</h4>
                                 <p>
                                     In the history of modern astronomy, there is probably no one greater leap forward.
                                 </p>
@@ -64,7 +65,7 @@ const Home = () => (
                         <div className="feature-item d-flex border-right-0">
                             <i className="ti-desktop"></i>
                             <div className="ml-20">
-                                <h4>Full E-Books</h4>
+                                <h4>Track Your progress</h4>
                                 <p>
                                     In the history of modern astronomy, there is probably no one greater leap forward.
                                 </p>
@@ -80,8 +81,8 @@ const Home = () => (
                     <div className="col-lg-12">
                         <div className="section-title">
                             <h2>
-                                Features That <br />
-                                Can Avail By Everyone
+                                Learn C the easy an fun way!<br />
+                                
                             </h2>
                            <div className="section-small-text">
                            
@@ -93,13 +94,12 @@ const Home = () => (
                     <div className="col-lg-4 col-md-6">
                         <div className="other-feature-item">
                             <i className="ti-key"></i>
-                            <h4>Lifetime Access</h4>
+                            <h4>Drag and Drop Code blocks</h4>
                             <div>
                                 <p>
-                                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                                    do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                                    amet consec tetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt labore.
+                                    An engaging way for learners to test wether they have understood the concept in the lesson.
+                                    Given a couple of disorganised statement a user assembled them in correct order that would be sufficient for it to run correctly
+                                    and efficiently.
                                 </p>
                             </div>
                         </div>
@@ -107,27 +107,26 @@ const Home = () => (
                     <div className="col-lg-4 col-md-6 mt--160">
                         <div className="other-feature-item">
                             <i className="ti-files"></i>
-                            <h4>Source File Included</h4>
+                            <h4>Level Assessment</h4>
                             <div>
                                 <p>
-                                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                                    do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                                    amet consec tetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt labore.
+                                    Want to know your progress? You can take a few of our quizzes about concepts in C .
+                                    After Completion of the test, you will be assigned a level and some lesson suggestions.
+
                                 </p>
                             </div>
+                             <div className="assess"><a className="button-assess" href="#">Take Assessment</a></div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 mt--260">
                         <div className="other-feature-item">
                             <i className="ti-medall-alt"></i>
-                            <h4>Student Membership</h4>
+                            <h4> Lesson Resources</h4>
                             <div>
                                 <p>
-                                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed
-                                    do eiusmod tempor incididunt labore. Lorem ipsum dolor sit
-                                    amet consec tetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt labore.
+                                    Detailed explanantions of the concept with examples and other resources about the concept.
+                                    Explanations can also include updates about the use of a concept.
+                                    So what are you waiting for? Let us become C programmers!
                                 </p>
                             </div>
                         </div>

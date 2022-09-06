@@ -84,3 +84,21 @@
     text-align: center;
     color: #999;
 }
+.button-assess {
+   display: inline-block;
+    height: 35px;
+    padding: 1px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(131, 110, 207);
+    justify-items: center;
+    
+    
+}
+.assess {
+    text-align: center;
+}
+.card.statuses .recommend {
+    padding-bottom: 12px;
+}

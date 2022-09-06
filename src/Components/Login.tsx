@@ -1,5 +1,6 @@
 
 import {Button} from "react-bootstrap";
+import Footer from "./Footer";
 
 const Login = () => {
  
@@ -19,15 +20,16 @@ const Login = () => {
                   <input type='password' name='password' />
                </div> 
                <div>
-                Do not have an account? <a href="Register">Register Here</a>
+                Do not have an account? <a href="Register" style= {{color: "#35509a"}}>Register Here</a>
                </div>             
-               <div className='submit'>
-                  <Button>Log In</Button>
+               <div className='submit' >
+                  <Button style={{backgroundColor: "#35509a"}}>Log In</Button>
                </div>
               
           </form>
       </div>
    </div>
+   <Footer/>
      </>
   );
 };

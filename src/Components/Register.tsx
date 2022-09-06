@@ -4,6 +4,8 @@ import * as Yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Button } from "react-bootstrap";
+import Footer from "./Footer";
+
 
 type UserSubmitForm = {
    fullname: string;
@@ -76,11 +78,18 @@ const Register: React.FC = () => {
 
                   </div>
                   <div className='submit'>
-                     <Button type="submit" >Register Me</Button>
+                     <Button type="submit" style={{backgroundColor: "#35509a"}} >Register Me</Button>
                   </div>
+                  <p className="text-left">
+              Already have an account?{' '}
+              <a style={{color: "#35509a"}}href="Login">Login</a>
+            </p>
+           
                </form>
             </div>
          </div>
+         <Footer/>
+       
       </>
    );
 };
