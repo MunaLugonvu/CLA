@@ -43,10 +43,10 @@ const LearningCenter = () => {
                     </div>
                 </Col></Row>
             <div style={{ textAlign: "center",paddingLeft: "20px" }}>
-            <h3 style={{ borderBottom: "solid 4px #030d51",backgroundColor:"#030d51", color:"#ffffff", display: "inline-flex"}}>Topics & Lessons</h3> </div>
+            <h3 style={{ borderBottom: "solid 4px #030d51", color:"rgb(69, 108, 134)", display: "inline-flex"}}>Topics & Lessons</h3> </div>
           
             <ListGroup  style={{ paddingRight: "20px",paddingLeft: "10px", marginLeft: "10px", textAlign: "center", paddingTop: "15px"}}>
-      <ListGroup.Item>Topic One <FaRegArrowAltCircleDown size={15}  style={{color: "black", marginLeft: "5px" }} /> </ListGroup.Item>
+      <ListGroup.Item className="topic-list"><a href="Lesson">Topic One</a> <FaRegArrowAltCircleDown size={15}  style={{color: "black", marginLeft: "5px" }} /> </ListGroup.Item>
       <ListGroup.Item>Topic Two<FaRegArrowAltCircleDown size={15}  style={{color: "black",marginLeft: "5px" }} /></ListGroup.Item>
       <ListGroup.Item>Topic Three<FaRegArrowAltCircleDown size={15}  style={{color: "black", marginLeft: "5px" }} /></ListGroup.Item>
       <ListGroup.Item>Topic Four<FaRegArrowAltCircleDown size={15}  style={{color: "black", marginLeft: "5px" }} /></ListGroup.Item>
